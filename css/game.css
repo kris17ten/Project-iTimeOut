@@ -1,0 +1,622 @@
+/* CSS Document */
+/*   ----- The whole thingie -----   */
+* {
+   margin: 0px;
+   padding: 0px 0px 0px 0px;
+   }
+body {
+    margin: 0 auto;
+    border-color: black;
+    border-style: dashed;
+    background-color: #e2d1ff88;
+    }   
+
+/*   ----- 3D navigation bar -----   */
+/* 3d navigation bar (internet ref: https://davidwalsh.name/3d-menu) */
+
+.blockMenu {
+    display: block;
+    background: black;
+    }
+.blockMenu li {
+    display: inline-block;
+    padding: 0px 10px;
+    }
+.blockMenu li a {
+    color: black;
+    display: block;
+    font-family: Waltograph;
+    text-decoration: none;
+    text-align: center;
+    overflow: visible;
+    line-height: 20px;
+    font-size: 26px;
+    padding: 18px 60px 10px 5px;
+    }
+.threeD {
+    perspective: 100px;
+    transition: all .07s linear;
+    position: relative;
+    }
+.threeD:hover .threeDBox,
+.threeD:focus .threeDBox {
+    transform: translateZ(-25px) rotateX(90deg);
+    font-weight: bold;
+    }
+.threeDBox {
+    transition: all .3s ease-out;
+    transform: translatez(-25px);
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    }
+.front {
+    transform: rotatex(0deg) translatez(25px);
+    }
+.back {
+    transform: rotatex(-90deg) translatez(25px);
+    }
+.front, .back {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #70707090;
+    padding: 15px 10px;
+    color: white;
+    box-sizing: border-box;
+    }
+#loginBar {
+    text-align: right;
+    }
+#navigation {
+    text-align: left;
+    font-size: 18px;
+    padding: 0px 0px 20px 0px;
+    }
+
+/*   ----- Logo/ Header -----   */
+
+#logoBar {
+    column-count: 6;
+    height: 130px;
+    background-color: lightBlue;
+    }
+#logo {
+    height: 135px;
+    opacity: 0.8;
+    position: absolute;
+    }
+
+/*   ----- Walking character -----   */
+#animationX {
+    column-span: 6;
+    position: relative;
+    animation-name: krisney;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    }
+@keyframes krisney {
+    0%   {left: 0px;}
+    100% {left: 1500px;}
+    }
+#krissy1 {
+    height: 70px;
+    position: relative;
+    padding: 60px 0px 0px 0px;
+    }
+    
+/*   ----- Contents of webpage -----   */
+
+/*   ----- Game details -----   */
+#gameSpeak {
+    width: 1000px;
+    height: 250px;
+    float: left;
+    }
+#mainGameLogo {
+    width: 200px;
+    padding: 0px 10px 10px 10px;
+    float: left;
+    }
+#gameDescription {
+    width: 680px;
+    height: 200px;
+    float: left;
+    padding: 10px 10px 10px 10px;
+    }
+h1 {
+    font-family: Mona Shark;
+    font-weight: normal;
+    font-size: 40px;
+    }
+p {
+    font-family: Lucida Calligraphy;
+    }
+
+/*   ----- User detials on sidebar -----   */
+
+#sidebar {
+    width: 300px;
+    height: 500px;
+    float: left;
+    background: url(images/userBack.jpg);
+    padding: 30px 5px 5px 5px;
+    }
+#userAvatar {
+    width: 200px;
+    position: relative;
+    left: 45px;
+    padding: 5px 0px 20px 0px;
+    }
+#sidebar h1 {
+    text-align: center;
+    color: white;
+    padding: 10px;
+    }
+#sidebar p {
+    font-family: Roughtypewriter;
+    font-size: 25px;
+    text-align: center;
+    padding: 0px 0px 10px 0px;
+    color: white;
+    }
+
+/*   ----- Just an outline -----   */
+#gap {
+    width: 1017px;
+    float: left;
+    padding: 0px 8px 20px 8px;
+    }
+    
+/*   ----- Game intro -----   */
+
+#introVideo {
+    position: absolute;
+    width: 1017px;
+    height: 572px;
+    z-index: 2;
+    }
+#skipToGame {
+    position: absolute;
+    z-index: 3;
+    top: 740px;
+    left: 738px;
+    padding: 15px 25px;
+    font-family: iCarly;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #9900FF;
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 10px #AAA;
+    }
+#skipToGame:hover {
+    background-color: #6600BB
+    }
+#skipToGame:active {
+    background-color: #6600BB;
+    box-shadow: 0 5px #777;
+    transform: translateY(4px);
+    }
+#skipToTutorial {
+    position: absolute;
+    z-index: 3;
+    top: 850px;
+    left: 745px;
+    padding: 12px 22px;
+    font-size: 20px;
+    font-family: iCarly;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #9900FF;
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 10px #AAA;
+    }
+#skipToTutorial:hover {
+    background-color: #6600BB
+    }
+#skipToTutorial:active {
+    background-color: #6600BB;
+    box-shadow: 0 5px #777;
+    transform: translateY(4px);
+    }
+#playIntro {
+    position: absolute;
+    z-index: 3;
+    top: 800px;
+    left: 758px;
+    padding: 12px 22px;
+    font-size: 20px;
+    font-family: iCarly;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #9900FF;
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 10px #AAA;
+    }
+#playIntro:hover {
+    background-color: #6600BB
+    }
+#playIntro:active {
+    background-color: #6600BB;
+    box-shadow: 0 5px #777;
+    transform: translateY(4px);
+    }
+#skipIntro {
+    position: absolute;
+    z-index: 3;
+    top: 900px;
+    left: 1050px;
+    display: none;
+    border-radius: 4px;
+    background-color: #0000ff;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#skipIntro span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#skipIntro span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -50px;
+    transition: 0.5s;
+}
+
+#skipIntro:hover span {
+    padding-right: 25px;
+}
+
+#skipIntro:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/*   ----- Tutorial -----   */
+
+#tutorial {
+    position: absolute;
+    top: 510px;
+    left: 335px;
+    width: 985px;
+    height: 555px;
+    background-image: url(images/tutorial1.png);
+    z-index: 1;
+    }
+#back {
+    position: absolute;
+    z-index: 2;
+    top: 490px;
+    left: 50px;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #ff0001;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    width: 90px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+#back span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#back span:after {
+    content: '\00ab';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -24px;
+    transition: 0.5s;
+}
+
+#back:hover span {
+    padding-left: 25px;
+}
+
+#back:hover span:after {
+    opacity: 1;
+    left: 0;
+}
+#next {
+    position: absolute;
+    z-index: 2;
+    top: 490px;
+    left: 150px;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #ff0001;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    width: 90px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+#next span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#next span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -24px;
+    transition: 0.5s;
+}
+
+#next:hover span {
+    padding-right: 25px;
+}
+
+#next:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+ 
+/*   ----- Game screen -----   */
+    
+#gameScreen {
+    width: 1015px;
+    height: 572px;
+    background-color: red;
+    float: left;
+    z-index: 0;
+    background: url(images/desktop.png);
+    }
+    
+/*   ----- On-screen keyboard -----   */
+#onScreenKeys {
+    position: absolute;
+    background-color: silver;
+    top: 940px;
+    left: 600px;
+    width: 400px;
+    height: 110px;
+    padding: 5px 5px 5px 5px;
+    visibility: hidden;
+    }
+#keyLine1 {
+    display: inline-block;
+    padding: 5px 0px 0px 30px;
+    }
+#keyLine2 {
+    display: inline-block;
+    padding: 5px 0px 0px 40px;
+    }
+#keyLine3 {
+    display: inline-block;
+    padding: 5px 0px 0px 50px;
+    }
+.button {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    }
+.spButton {
+    width: 50px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    }
+
+/*   ----- Timer -----   */
+#timerStuff {
+    width: 1000px;
+    height: 100px;
+    position: absolute;
+    top: 505px;
+    left: 330px;
+    }
+#timerLoc {
+    width: 800px;
+    height: 40px;
+    padding: 5px 5px 5px 5px;
+    float: left;
+    visibility: hidden;
+    }
+#timer {
+    width: 700px;
+    height: 5px;
+    background-color: grey;
+    position: absolute;
+    top: 20px;
+    }
+#timerLoc p {
+    position: absolute;
+    top: 20px;
+    left: 750px;
+    width: 80px;
+    }
+    
+/*   ----- Score -----   */
+#scoreLoc {
+    width: 800px;
+    height: 40px;
+    padding: 5px 5px 5px 5px;
+    float: left;
+    visibility: hidden;
+    }
+#scoreLoc p {
+    text-align: right;
+    position: absolute;
+    top: 60px;
+    left: 750px;
+    }
+    
+/*   ----- Pic on the side -----   */
+#characterAnimXLoc {
+    width: 110px;
+    height: 110px;
+    float: right;
+    padding: 5px;
+    visibility: hidden;
+    }
+#webcam {
+    width: 100px;
+    height: 90px;
+    }
+    
+/*   ----- Play stuff -----   */
+#play {
+    background: url(images/play_button.png);
+    position: absolute;
+    top: 705px;
+    left: 800px;
+    width: 100px;
+    height: 110px;
+    border: none;
+    border-radius: 8px;
+    }
+#play:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    
+/*   ----- Paragraphs in the game -----   */
+#hint {
+    position: absolute;
+    width: 500px;
+    top: 800px;
+    left: 560px;
+    font-size: 25px;
+    text-align: center;
+    }
+#guess {
+    position: absolute;
+    top: 840px;
+    left: 730px;
+    font-size: 40px;
+    text-align: center;
+    }
+#answer {
+    position: absolute;
+    top: 930px;
+    left: 1100px;
+    font-size: 20px;
+    }
+#lettersUsed {
+    position: absolute;
+    top: 980px;
+    left: 1050px;
+    font-size: 20px;
+    }
+
+/*   ----- Game end -----   */
+#endDiv {
+    width: 1015px;
+    height: 572px;
+    float: left;
+    z-index: -1;
+    position: absolute;
+    }    
+#endVideo {
+    position: absolute;
+    width: 1017px;
+    height: 572px;
+    z-index: 1;
+    }
+    
+#replay {
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #9900FF;
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 10px #AAA; 
+    position: absolute;
+    top: 900px;
+    left: 790px;
+    width: 150px;
+    height: 80px;
+    border: none;
+    border-radius: 8px;
+    display: none;
+    z-index: 2;
+    }
+    
+#scoreDetails {
+    padding: 15px;
+    width: 450px;
+    height: 300px;
+    border-color: white;
+    border-style: dashed;
+    visibility: hidden;
+    z-index: 2;
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    }
+
+#scoreDetails p {
+    font-size: 50px;
+    color: white;
+    font-family: Mickey;
+    text-align: center;
+    font-weight: bold;
+    }
+    
+/*   ----- Footer -----   */
+
+#footer {
+    clear: both;
+    text-align: center;
+    font-size: 12px;
+    background-color: #00f0f0;
+    }
