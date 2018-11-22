@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title id="title">Registration Page</title>
+    <link href="css/registration.css" type="text/css" rel="stylesheet">
+    <script src="js/registration.js"></script>
+  </head>
+  <body>
+    <div id="loginBar">
+      <ul class="blockMenu">
+        <li>
+          <a href="login.html" class="threeD">
+		      Login
+		        <span hidden="true" class="threeDBox">
+			       <span class="front">Login</span>
+			       <span class="back">Login</span>
+		        </span>
+	        </a>
+        </li>
+        <li>
+          <a href="registration.html" class="threeD">
+		      Register
+		        <span hidden="true" class="threeDBox">
+			         <span class="front">Register</span>
+			         <span class="back">Register</span>
+		        </span>
+	        </a>
+        </li>
+      </ul>
+    </div>
+    
+    <div id="logoBar">
+      <img src="images/krisneyBack.png" id="logo">
+        <div id="animationX">
+          <img src="images/krisney.gif" id="krissy1">
+        </div>
+    </div>
+ <!--3d navigation bar (internet ref. https://davidwalsh.name/3d-menu)-->   
+    <div id="navigation">
+      <ul class="blockMenu">
+       <li>
+        <a href="home.html" class="threeD">
+		    Home
+		      <span hidden="true" class="threeDBox">
+			     <span class="front">Home</span>
+			     <span class="back">Home</span>
+		      </span>
+	      </a>
+       </li>
+       <li>
+        <a href="game.html" class="threeD">
+		    Game
+		      <span hidden="true" class="threeDBox">
+			     <span class="front">Game</span>
+			     <span class="back">Game</span>
+		      </span>
+	      </a>
+       </li>
+       <li>
+        <a href="rankings.html" class="threeD">
+		    Rankings
+		      <span hidden="true" class="threeDBox">
+			     <span class="front">Rankings</span>
+			     <span class="back">Rankings</span>
+		      </span>
+	      </a>
+       </li>
+       <li>
+        <a href="videos.html" class="threeD">
+		    Videos
+		      <span hidden="true" class="threeDBox">
+			     <span class="front">Videos</span>
+			     <span class="back">---</span>
+		      </span>
+	      </a>
+       </li>
+       <li>
+        <a href="about.html" class="threeD">
+		    About
+		      <span hidden="true" class="threeDBox">
+			     <span class="front">About</span>
+			     <span class="back">About</span>
+		      </span>
+	      </a>
+       </li>
+     </div>
+    
+     <div id="contents">
+        <div id="registrationForm">
+          <h1>Registration</h1>
+          <p>Why? Well, why not?</p>
+          <form name="regForm" id="reg">
+            <table id="arrangeElements">
+              <tr>
+                <td id="data">Name: </td>
+                <td>
+                  <input type="text" name="myName" id="nameInput" size="40" placeholder="Some One">
+                </td>
+              </tr>
+              <tr>
+                <td id="data">Username: </td>
+                <td>
+                  <input type="text" name="myUsername" id="uNameInput" size="40" placeholder="Krisney_17">
+                </td>
+              </tr>
+              <tr>
+                <td id="data">Email id: </td>
+                <td>
+                  <input type="email" name="myEmail" id="emailInput" size="40" placeholder="someone@example.com">
+                </td>
+              </tr>
+              <tr>
+                <td id="data">Password: </td>
+                <td>
+                  <input type="password" name="myPassword" id="passwordInput" size="40" placeholder="*********">
+                </td>
+              </tr>
+              <tr>
+                <td id="data">Choose your spirit <br> Marshie: </td>
+                <td>
+                  <select id="avatar">
+                    <option value="grumpster">Grumpster (M)</option>
+                    <option value="dok">Dok (M)</option>
+                    <option value="blushie">Blushie (F)</option>
+                    <option value="smiley">Smiley (F)</option>
+                    <option value="dozer">Dozer (F)</option>
+                    <option value="sneezie">Sneezie (M)</option>
+                    <option value="sillie">Sillie (M)</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+            </table>
+            <input type="button" id="submit" value="Submit" onclick="storeMarshie()">
+            <input type="reset" id="clear" value="Clear">
+          </form>
+          <p id="state"> </p>
+          <div id="moveOut">
+            <h2> Already a user? </h2>
+            <img src="images/profile.png" id="character">
+            <p> Good for you. You may proceed to mark your attendance. Login
+              <a href="login.html">here...</a>
+            </p>
+          </div>
+        </div>
+        
+       
+    </div>
+    
+    <div id="footer">
+      <p>©Krisney.com presented by Kristen Rebello 2017</p>
+    </div>
+  </body>
+</html>
